@@ -4,6 +4,10 @@
 
 Простой генератор надёжных паролей.
 
+## Ссылка
+
+https://anna201708.github.io/password-generator/
+
 ## Технологии
 - HTML
 - CSS
