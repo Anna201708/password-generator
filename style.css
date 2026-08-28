@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f4f8;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 460px;
+    max-width: 95%;
+}
+
+h1 {
+    text-align: center;
+    color: #1a202c;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.password-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#password {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 16px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    background: #f7fafc;
+    color: #2d3748;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+#password:focus {
+    border-color: #4299e1;
+}
+
+#copyBtn {
+    padding: 12px 20px;
+    background: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.3s;
+    flex-shrink: 0;
+}
+
+#copyBtn:hover {
+    background: #3182ce;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.setting-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setting-row label {
+    color: #2d3748;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#length {
+    width: 140px;
+    cursor: pointer;
+}
+
+#lengthValue {
+    font-weight: bold;
+    color: #4299e1;
+    font-size: 18px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #2d3748;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+#generateBtn {
+    width: 100%;
+    padding: 14px;
+    background: #48bb78;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#generateBtn:hover {
+    background: #38a169;
+}
+
+.strength {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+    color: #718096;
+}
+
+.strength-bar {
+    height: 6px;
+    border-radius: 4px;
+    background: #e2e8f0;
+    margin-top: 6px;
+    overflow: hidden;
+}
+
+.strength-bar .fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 4px;
+    transition: width 0.4s, background 0.4s;
+}
